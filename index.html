@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nicholas Beaken's Portfolio</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <video autoplay muted loop id="background-video">
+            <source src="/resoruces/code-background.mp4" type="video/mp4">
+          </video>
+        <header>
+            <h2 id="title" class="codetext">&ltnickbeaken&gt</h2>
+            <ul class="nav">
+                <li><a href="#projects-container">projects</a></li>
+                <li><a href="#about-container">about</a></li>
+                <li><a href="#skills-container">skills</a></li>
+                <li><a href="#contact-container">contact</a></li>
+            </ul>
+            <!--dropdown list-->
+            <div class="dropdown_list">
+                <button class="dropdown_button" 
+                    onclick="showList()">
+                    <img id="dropdown_img" onclick="rotateImage()" src="https://img.icons8.com/ios/50/expand-arrow--v1.png" alt="expand-arrow--v1"/>
+                </button>
+    
+                <div id="navId" class="sections">
+                    <li><a href="#projects-container">projects</a></li>
+                    <li><a href="#about-container">about</a></li>
+                    <li><a href="#skills-container">skills</a></li>
+                    <li><a href="#contact-container">contact</a></li>
+                </div>
+            </div>
+            <!---->
+        </header>
+        <section class="main-container">
+            <div class="main-text">
+                <h1>Hello there, I'm Nick Beaken</h1>
+                <h2 class="codetext">&ltfrontend developer&gt</h2>
+                <p class="typeText"></p>
+            </div>
+            <div class="main-photo">
+                <img id="nick-pic" src="/resoruces/nick2.jpg">
+            </div>
+        </section>
+        <section id="projects-container">
+            <h2 class="codetext">&ltprojects&gt</h2>
+            <p>Here is some of my work!</p>
+            <a href="https://github.com/nickbeaken" target="_blank"><img width="100" height="100" src="https://img.icons8.com/external-those-icons-flat-those-icons/100/external-GitHub-Logo-social-media-those-icons-flat-those-icons-2.png" alt="external-GitHub-Logo-social-media-those-icons-flat-those-icons-2"></a>
+        </section>
+        <section id="about-skills-container">
+            <div id="about-container">
+                <h2 class="codetext">&ltabout&gt</h2>
+                <p>Born and raised in Latrobe PA, I have always had a passion for creating things.</p>
+            </div>
+            <div id="skills-container">
+                <h2 class="codetext">&ltskills&gt</h2>
+                <div class="skills-img">
+                    <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                    <img src="https://img.icons8.com/color/48/css3.png" alt="css3"/>
+                    <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
+                </div>    
+            </div>
+        </section>
+        <section id="contact-container">
+            <h2 class="codetext">&ltcontact&gt</h2>
+            <h3>I would love to get in touch with you!</h3>
+            <ul>
+                <li>Email: nickbeaken@gmail.com</li>
+                <li>Phone: 724-953-8014</li>
+            </ul>
+        </section>
+        <footer>
+            <ul>
+                <li class="codetext">email: nickbeaken@gmail.com</li>
+                <li class="codetext">phone: 724-953-8014</li>
+            </ul>
+        </footer>
+
+        <script src="/scrpit.js"></script>
+    </body>
+</html>
